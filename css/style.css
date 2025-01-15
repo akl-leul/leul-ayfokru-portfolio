@@ -174,8 +174,13 @@ nav .social {
     justify-content: center;
     text-align: center;
 }
-.container-fluid:nth-child(3) .row .col-md-4 .content:hover{
+.container-fluid:nth-child(3) .row .col-md-4{
+    background-color: var(--accent-color);
+
+}
+.container-fluid:nth-child(3) .row .col-md-4:hover{
     margin-top: -20px;
+    border: 1px solid var(--accent-color);
 }
 .container-fluid:nth-child(3) .row .col-md-8 .content i{
     font-size: 40px;
