@@ -70,7 +70,7 @@ nav .onMobile{
         background-color: #333;
     }
 
-    nav ul.onMobile li {
+    nav .onMobile li {
         display: block; /* Stack mobile menu items */
         margin: 10px 0;
     }
