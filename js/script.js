@@ -1,6 +1,6 @@
 // Toggle Navigation Menu for Mobile View
-const navToggle = document.querySelector('.toggle-button'); // Updated to match the button class
-const navMenu = document.querySelector('.icon');
+const navToggle = document.querySelector('.icon'); // Updated to match the button class
+const navMenu = document.querySelector('.onMobile');
 
 navToggle.addEventListener('click', () => {
   if (navMenu.style.display === 'none' || navMenu.style.display === '') {
