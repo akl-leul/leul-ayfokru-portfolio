@@ -1,0 +1,57 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul.onPc {
+        display: none; /* Hide desktop menu */
+    }
+
+    nav ul.onMobile {
+        display: block; /* Show mobile menu */
+        position: absolute;
+        top: 60px; /* Adjust based on your layout */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul.onMobile li {
+        display: block; /* Stack mobile menu items */
+        margin: 10px 0;
+    }
+}
