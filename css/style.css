@@ -103,6 +103,15 @@ nav #icon{
         margin: 10px 0;
     }
 }
+@keyframes showMenu {
+    0 %{
+        transform: translateX(-100%);
+    }
+    100 %{
+        transform: translateX(0);
+        }
+
+}
 .container-fluid{
     max-width: 1200px;
     margin: 0 auto;
