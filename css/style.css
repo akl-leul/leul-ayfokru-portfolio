@@ -115,7 +115,7 @@ nav #icon{
 @keyframes closeMenu {
     0%{
         transform: translateX(0);
-        transform-origin: right;
+        transform-origin: left;
         }
         100%{
             transform: translateX(-100%);
