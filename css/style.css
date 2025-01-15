@@ -130,8 +130,10 @@ nav .social {
     max-width: 1200px;
     margin: 0 auto;
     color: var(--background-color);
+    background: url(
+        
+    );
     padding: 10px;
-    height: 100vh;
     display: flex;
     font-family: var(--primary-font);
     text-align: center;
@@ -143,7 +145,23 @@ nav .social {
     color: var(--accent-color);
     font-family: var(--secondary-font);
 }
-#home button{
+
+.content button{
     background-color: var(--primary-color);
     color: var(--background-color);
+    padding: 10px;
+    border: none;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    justify-items: center;
+    transition: all 0.5s ease;
+}
+.content button:hover{
+    background-color: var(--accent-color);
+}
+.content button a{
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: 700;
 }
