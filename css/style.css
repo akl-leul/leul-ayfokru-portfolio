@@ -130,7 +130,6 @@ nav .social {
     max-width: 1200px;
     margin: 0 auto;
     color: var(--background-color);
-    background: url(https://www.pexels.com/photo/round-gray-objects-12198534/);
     padding: 10px;
     height: 100vh;
     display: flex;
@@ -143,4 +142,8 @@ nav .social {
 #home .first {
     color: var(--accent-color);
     font-family: var(--secondary-font);
+}
+#home button{
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
