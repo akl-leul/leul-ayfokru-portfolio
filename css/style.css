@@ -126,6 +126,7 @@ nav #icon{
     max-width: 1200px;
     margin: 0 auto;
     color: var(--background-color);
+    background: url(https://www.pexels.com/photo/round-gray-objects-12198534/);
     padding: 10px;
     height: 100vh;
     display: flex;
