@@ -55,6 +55,9 @@ nav ul li a {
 nav .onMobile{
     display: none;
 }
+nav .icon{
+    dispay: none;
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     nav .onPc {
