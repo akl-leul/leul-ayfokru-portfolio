@@ -112,6 +112,14 @@ nav #icon{
         }
 
 }
+@keyframes closeMenu {
+    0%{
+        transform: translateX(0);
+        }
+        100%{
+            transform: translateX(100%);
+            }
+        }
 .container-fluid{
     max-width: 1200px;
     margin: 0 auto;
