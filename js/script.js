@@ -26,21 +26,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-
-    // Typewriter Effect for .skilltext
-    const skillText = document.querySelector('.skill');
-    const text = skillText.textContent;
-    skillText.textContent = 'Frontend Developer | Android App Creator | Tech Enthusiast';
-
-    let index = 0;
-
-    function typeWriter() {
-        if (index < text.length) {
-            skillText.textContent += text.charAt(index);
-            index++;
-            setTimeout(typeWriter, 100); // Adjust typing speed here
-        }
-    }
-
-    typeWriter();
-});
+)
