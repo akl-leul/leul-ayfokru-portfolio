@@ -82,6 +82,7 @@ nav #icon{
         display: flex; /* Show mobile menu */
         flex-direction: column;
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         align-items: center;
         gap: 20px;
         position: absolute;
