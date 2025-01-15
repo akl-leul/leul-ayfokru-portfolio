@@ -1,3 +1,5 @@
+# Hi 👋 there,
+
 # Leul Ayfokru Portfolio
 
 This repository contains the source code for my personal portfolio website. It showcases my skills, projects, and achievements as a **frontend website and Android application developer**.
