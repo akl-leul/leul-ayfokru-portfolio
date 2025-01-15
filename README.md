@@ -19,7 +19,9 @@ Check out the live website here: [My Portfolio](https://leul-ayfokru-portfolio.v
 ## Usage
 To run this project locally:
  1. Clone the repository:
-   ```bash
+   ```
+   bash
+   
    git clone https://github.com/akl-leul/leul-ayfokru-portfolio.git
 ```
 2. Open the index.html file in your browser.
@@ -29,6 +31,7 @@ To run this project locally:
 
 
 Feel free to reach out if you have any questions or opportunities:
+
 📧 Email: abateisking@gmail.com
 
 
