@@ -84,7 +84,7 @@ nav #icon{
     nav .onMobile {
         display: none; /* Show mobile menu */
         flex-direction: column;
-        
+        padding-top: 30px;
         align-items: center;
         gap: 20px;
         position: absolute;
