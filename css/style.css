@@ -102,7 +102,7 @@ nav #icon{
         margin: 10px 0;
     }
 }
-.container{
+.container-fluid{
     max-width: 1200px;
     margin: 0 auto;
     color: var(--background-color);
