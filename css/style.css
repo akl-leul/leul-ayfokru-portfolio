@@ -18,7 +18,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
     scroll-behavior: smooth;
 }
 
@@ -101,4 +101,9 @@ nav #icon{
         display: block; /* Stack mobile menu items */
         margin: 10px 0;
     }
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--background-color);
 }
