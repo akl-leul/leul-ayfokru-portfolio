@@ -1,14 +1,13 @@
+// Toggle Navigation Menu for Mobile View
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.icon'); // Updated to match the button class
     const navMenu = document.querySelector('.onMobile');
 
     navToggle.addEventListener('click', () => {
-        if (navMenu.style.display === 'none' || navMenu.style.display === '') {
-            navMenu.style.display = 'flex'; // Show the mobile menu
-            
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active'); // Hide the mobile menu
         } else {
-            navMenu.style.display = 'none'; // Hide the mobile menu
-            navMenu.style.animation = 'closeMenu 0.75s'; // Add animation
+            navMenu.classList.add('active'); // Show the mobile menu
         }
     });
 
@@ -27,4 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // Typewriter Effect for .skilltext
+    const skillText = document.querySelector('.skill');
+    const text = skillText.textContent;
+    skillText.textContent = 'Frontend Developer | Android App Creator | Tech Enthusiast';
+
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            skillText.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100); // Adjust typing speed here
+        }
+    }
+
+    typeWriter();
 });
