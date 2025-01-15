@@ -134,3 +134,6 @@ nav #icon{
     justify-content: space-evenly;
     align-items: center;
 }
+#home .first{
+    color: var(--accent-color);
+}
