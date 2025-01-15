@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.addEventListener('click', () => {
         if (navMenu.style.display === 'none' || navMenu.style.display === '') {
             navMenu.style.display = 'flex'; // Show the mobile menu
-            navMenu.style.animation = 'showMenu 0.5s'; // Add animation
+            navMenu.style.animation = 'showMenu 0.75s'; // Add animation
         } else {
             navMenu.style.display = 'none'; // Hide the mobile menu
         }
