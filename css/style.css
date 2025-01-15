@@ -52,7 +52,9 @@ nav ul li a {
     color: var(--text-color);
     text-decoration: none;
 }
-
+nav ul.onMobile{
+    display: none;
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     nav ul.onPc {
