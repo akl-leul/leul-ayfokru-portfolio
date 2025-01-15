@@ -36,6 +36,7 @@ nav .logo a {
     color: var(--text-color);
     text-decoration: none;
     font-size: 24px;
+    cursor: pointer;
 }
 
 nav ul {
@@ -111,4 +112,5 @@ nav #icon{
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: var(--primary-font);
 }
