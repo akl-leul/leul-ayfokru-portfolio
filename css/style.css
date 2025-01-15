@@ -195,12 +195,6 @@ nav .social {
     scale: 1.1;
     z-index: 3;
 }
-.container-fluid:nth-child(3) .row .col-md-4:hover > .container-fluid:nth-child(3) .row .col-md-4 i{
-    color: var(--accent-color);
-    transform: rotate(360deg);
-}
-
-
 
 .container-fluid:nth-child(3) .row .col-md-8 .content i{
     font-size: 40px;
