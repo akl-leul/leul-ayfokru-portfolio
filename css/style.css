@@ -61,7 +61,7 @@ nav .onMobile{
         display: none; /* Hide desktop menu */
     }
 
-    nav ul.onMobile {
+    nav .onMobile {
         display: block; /* Show mobile menu */
         position: absolute;
         top: 60px; /* Adjust based on your layout */
