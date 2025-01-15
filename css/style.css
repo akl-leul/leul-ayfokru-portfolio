@@ -62,6 +62,7 @@ nav .onMobile{
     }
 nav #icon{
     display: block;
+    font-size: 50px;
 }
     nav .onMobile {
         display: none; /* Show mobile menu */
