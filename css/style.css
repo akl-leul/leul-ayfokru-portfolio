@@ -69,7 +69,7 @@ nav #icon{
 }
     nav .onMobile {
         display: flex; /* Show mobile menu */
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
         position: absolute;
         top: 60px; /* Adjust based on your layout */
