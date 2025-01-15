@@ -31,6 +31,7 @@ nav {
     font-family: var(--primary-font);
     font-weight: 500;
     position: fixed;
+    width: 100%;
 }
 
 nav .logo a {
