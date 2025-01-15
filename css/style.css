@@ -70,11 +70,13 @@ nav #icon{
     nav .onMobile {
         display: flex; /* Show mobile menu */
         flex-direction: column;
+        jus
         gap: 20px;
         position: absolute;
         top: 60px; /* Adjust based on your layout */
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 30%;
+    
         background: var(--primary-color);
         
     }
