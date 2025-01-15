@@ -1,6 +1,26 @@
-/* Base styles */
+:root {
+    /* Primary Color */
+    --primary-color: #3A86FF;
+    
+    /* Secondary Color */
+    --secondary-color: #FF006E;
+  
+    /* Background Color */
+    --background-color: #F1FAEE;
+  
+    /* Text Color */
+    --text-color: #333333;
+  
+    /* Accent Color */
+    --accent-color: #A8DADC;
+  
+    /* Hover/Active Color */
+    --hover-color: #00B4D8;
+  }
+  
 body {
-    font-family: Arial, sans-serif;
+    top:0;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
