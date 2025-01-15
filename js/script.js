@@ -20,8 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetSection = document.querySelector(targetId); // Select the target section
 
             // Scroll to the target section smoothly
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
-    });})
+    });
+});
