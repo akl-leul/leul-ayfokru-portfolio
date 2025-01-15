@@ -55,15 +55,12 @@ nav ul li a {
     text-decoration: none;
 }
 nav .onMobile {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for smooth effect */
+   display: none
+   ;
 }
 
-nav .onMobile.active {
-    opacity: 1;
-    visibility: visible; /* Make it visible when active */
-}
+
+
 nav #icon{
     display: none;
 }
@@ -134,8 +131,3 @@ nav #icon{
     padding: 10px;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: var(--primary-font);
-}
