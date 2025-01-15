@@ -107,6 +107,7 @@ nav #icon{
     max-width: 1200px;
     margin: 0 auto;
     color: var(--background-color);
+    padding: 10px;
     height: 100vh;
     display: flex;
     justify-content: center;
