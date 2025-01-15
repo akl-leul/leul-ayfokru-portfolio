@@ -105,20 +105,19 @@ nav #icon{
 }
 @keyframes showMenu {
     0%{
-        transform: translateX(-100%);
+       scale: 0;
     }
     100%{
-        transform: translateX(0);
+        scale: 1.1;
         }
 
 }
 @keyframes closeMenu {
     0%{
-        transform: translateX(0);
-        transform-origin: left;
+        scale: 1.1;
         }
         100%{
-            transform: translateX(-100%);
+           scale:0;
             }
         }
 .container-fluid{
