@@ -58,6 +58,16 @@ nav .onMobile{
 nav #icon{
     display: none;
 }
+nav ul li a:hover{
+    color: var(--primary-color);
+    }
+nav .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     nav .onPc {
