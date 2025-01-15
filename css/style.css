@@ -60,7 +60,9 @@ nav .onMobile{
     nav .onPc {
         display: none; /* Hide desktop menu */
     }
-nav .icon{}
+nav #icon{
+    display: block;
+}
     nav .onMobile {
         display: none; /* Show mobile menu */
         position: absolute;
