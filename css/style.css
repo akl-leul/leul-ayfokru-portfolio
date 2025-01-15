@@ -136,5 +136,5 @@ nav #icon{
 }
 #home .first{
     color: var(--accent-color);
-    font-family: var(--accent-font);
+    font-family: var(--secondary-font);
 }
