@@ -70,8 +70,8 @@ nav #icon{
     nav .onMobile {
         display: flex; /* Show mobile menu */
         flex-direction: column;
-        justify-content: center;
         
+        align-items: center;
         gap: 20px;
         position: absolute;
         top: 60px; /* Adjust based on your layout */
