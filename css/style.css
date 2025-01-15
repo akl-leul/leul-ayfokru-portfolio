@@ -62,12 +62,12 @@ nav .onMobile{
     }
 
     nav .onMobile {
-        display: block; /* Show mobile menu */
+        display: none; /* Show mobile menu */
         position: absolute;
         top: 60px; /* Adjust based on your layout */
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: ;
     }
 
     nav .onMobile li {
