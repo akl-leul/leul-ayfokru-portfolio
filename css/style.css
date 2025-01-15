@@ -107,6 +107,7 @@ nav #icon{
     margin: 0 auto;
     color: var(--background-color);
     height: 100lvh;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
