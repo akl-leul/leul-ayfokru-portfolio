@@ -52,7 +52,7 @@ nav ul li a {
     color: var(--text-color);
     text-decoration: none;
 }
-nav ul.onMobile{
+nav .onMobile{
     display: none;
 }
 /* Responsive styles */
