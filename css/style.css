@@ -173,7 +173,9 @@ nav .social {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--accent-color);
+}
+.container-fluid:nth-child(3) .row .col-md-4 .content:hover{
+    margin-top: -20px;
 }
 .container-fluid:nth-child(3) .row .col-md-8 .content i{
     font-size: 40px;
