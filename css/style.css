@@ -56,7 +56,7 @@ nav .onMobile{
     display: none;
 }
 nav #icon{
-    dispay: none;
+    display: none;
 }
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -73,7 +73,6 @@ nav #icon{
         top: 60px; /* Adjust based on your layout */
         left: 0;
         width: 100%;
-        background-color: ;
     }
 
     nav .onMobile li {
