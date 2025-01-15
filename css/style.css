@@ -57,7 +57,7 @@ nav .onMobile{
 }
 /* Responsive styles */
 @media (max-width: 768px) {
-    nav ul.onPc {
+    nav .onPc {
         display: none; /* Hide desktop menu */
     }
 
