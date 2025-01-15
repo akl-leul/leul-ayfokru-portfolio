@@ -59,7 +59,7 @@ nav #icon{
     display: none;
 }
 nav ul li a:hover{
-    color: var(--primary-color);
+    color: var(--hover-color);
     }
 nav .social{
     display: flex;
