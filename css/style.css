@@ -27,6 +27,7 @@ nav {
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
+    font-family: var(--primary-font);
 }
 
 nav .logo a {
