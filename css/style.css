@@ -66,7 +66,7 @@ nav .social{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    gap: 30px;
+    gap: 20px;
     flex-direction: row;
 }
 /* Responsive styles */
