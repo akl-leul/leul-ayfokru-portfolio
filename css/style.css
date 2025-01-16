@@ -267,3 +267,6 @@ nav .social {
     color: var(--neutral-color);
     font-weight: 700;
 }
+.hr{
+    border: 1px solid var(--neutral-color);
+}
