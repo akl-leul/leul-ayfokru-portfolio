@@ -154,9 +154,10 @@ nav .social {
     color: var(--neutral-color);
     padding: 10px;
     min-height: 100vh;
-    
     font-family: var(--primary-font);
     text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
