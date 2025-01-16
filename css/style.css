@@ -272,7 +272,7 @@ nav .social {
     border: 1px solid var(--neutral-color);
 }
 #typewriter-text{
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--neutral-color);
     border-right: 3px solid var(--accent-color);
     white-space: nowrap;
@@ -280,7 +280,11 @@ nav .social {
     display: inline-block;
     animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
-
+@media screen only (max-width:768px) {
+    #typewriter-text{
+        font-size: 16px;
+    }
+}
 @keyframes typing {
     from {
         width: 0;
