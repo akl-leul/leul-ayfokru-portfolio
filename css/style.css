@@ -146,7 +146,7 @@ nav .social {
 }
 .container-fluid:nth-child(3){
     background: url(
-
+        https://imgs.search.brave.com/TyhwvEtjXd_SsJDtcIyNB7d2758ZIWonHjNulzhnq4k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vQUtiaktz/NE5lOUx6WTlVbnJP/UHRDeVlsMHE3OVVw/M1gwOXl0MnZxXy1Z/by9yczpmaXQ6NTYw/OjMyMDoxOjAvZzpj/ZS9hSFIwY0hNNkx5/OXBiV2N1L1puSmxa/WEJwYXk1amIyMHYv/Wm5KbFpTMTJaV04w/YjNJdi9aM0poWkds/bGJuUXRhR1Y0L1lX/ZHZibUZzTFdKaFky/dG4vY205MWJtUmZN/ak10TWpFMC9PRGsw/TkRFMk5DNXFjR2Nf/L2MyVnRkRDFoYVhO/ZmFIbGkvY21saw.jpeg
     );
     background-position: center;
     background-repeat: no-repeat;
@@ -199,7 +199,7 @@ nav .social {
 .container-fluid:nth-child(3) .row .col-md-4:hover{
     margin-top: -20px;
     border: 1px solid var(--accent-color-hover);
-    box-shadow: 0 0 10px var(--accent-color-hover);
+    box-shadow: 0 0 10px var(--primary-color);
     border-radius: 6px;
     scale: 1.1;
     z-index: 3;
