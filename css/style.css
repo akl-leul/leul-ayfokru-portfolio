@@ -280,7 +280,7 @@ nav .social {
     display: inline-block;
     animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
 }
-@media screen only (max-width:768px) {
+@media (max-width:768px) {
     #typewriter-text{
         font-size: 16px;
     }
