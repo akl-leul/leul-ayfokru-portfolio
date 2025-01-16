@@ -170,7 +170,6 @@ nav .social {
     justify-content: left;
     text-align: left;
     box-shadow: 0 0 10px var(--accent-color);
-    text-shadow: 0 0 10px var(--primary-color);
     border-radius: 12px;
 }
 .container-fluid:nth-child(3) .col-md-6{
