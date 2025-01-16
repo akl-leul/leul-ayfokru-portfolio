@@ -219,12 +219,17 @@ nav .social {
     border-radius: 6px;
     scale: 1.1;
     z-index: 3;
-    transition: transform 0.3s ease; /* Added transition for smooth movement */
+    color: var(--accent-color);
+    transition: all 0.3s ease; /* Added transition for smooth movement */
 }
 .container-fluid:nth-child(3) .row .col-md-4 i{
     color: var(--primary-color);
+    transition: all 1s ease;
 }
-
+.container-fluid:nth-child(3) .row .col-md-4:hover > i{
+    color: var(--accent-color);
+    font-size: 70px;
+}
 .container-fluid:nth-child(3) .row .col-md-8 .content i{
     font-size: 40px;
 }
