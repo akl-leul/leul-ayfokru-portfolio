@@ -169,6 +169,9 @@ nav .social {
     align-items: left;
     justify-content: left;
     text-align: left;
+    background: linear-gradient(135deg, #FFD460, #FF6B6B);
+    box-shadow: 0 0 10px var(--accent-color);
+    text-shadow: 0 0 10px var(--primary-color);
 }
 .container-fluid:nth-child(3) .col-md-6{
     max-width: 1200px;
