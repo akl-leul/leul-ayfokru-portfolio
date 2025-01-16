@@ -1,10 +1,13 @@
 :root {
-    --primary-color: #00BFAE;  /* Bold and Striking */
-    --secondary-color: #1F1B2E;  /* Rich and Deep */
-    --background-color: #F6F5F3;  /* Clean and Calm */
-    --text-color: #333333;  /* Clear and Neutral */
-    --accent-color: #FF6B6B;  /* Fresh and Fun */
-    --hover-color: #FFDA7F;  /* Interactive and Dynamic */
+    --primary-color: #3A3D5B; /* Deep Indigo */
+    --secondary-color: #FFD460; /* Soft Gold */
+    --accent-color: #FF6B6B; /* Soft Red */
+    --neutral-color: #F7FFF7; /* Off-White */
+    --background-accent: #A8DADC; /* Light Aqua */
+
+    --secondary-color-hover: #FFC947; /* A slightly darker shade of Soft Gold */
+  --accent-color-hover: #FF4B4B; /* A deeper shade of Soft Red */
+  --background-accent-hover: #91CBCF; /* A softer shade of Light Aqua */
 
     --primary-font: 'Poppins', sans-serif;
     --secondary-font: 'Lora', serif;
@@ -17,7 +20,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -35,7 +38,7 @@ nav {
 }
 
 nav .logo a {
-    color: var(--text-color);
+    color: var(--neutral-color);
     text-decoration: none;
     font-size: 24px;
     cursor: pointer;
@@ -53,7 +56,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--text-color);
+    color: var(--neutral-color);
     text-decoration: none;
 }
 
@@ -66,7 +69,7 @@ nav #icon {
 }
 
 nav ul li a:hover {
-    color: var(--hover-color);
+    color: var(--secondary-color-hover);
 }
 
 nav .social {
@@ -132,7 +135,7 @@ nav .social {
 .container-fluid {
     max-width: 1200px;
     margin: 0 auto;
-    color: var(--background-color);
+    color: var(--neutral-color);
     padding: 10px;
     min-height: 90lvh;
     
@@ -183,14 +186,14 @@ nav .social {
    justify-content: center;
    align-items: center;
     width: 30%;
-    background-color: #00bfaf21;
+    background-color: var(--background-accent);
     backdrop-filter: blur(10px);
     transition: all 0.5s ease;
 }
 .container-fluid:nth-child(3) .row .col-md-4:hover{
     margin-top: -20px;
-    border: 1px solid var(--accent-color);
-    box-shadow: 0 0 10px var(--hover-color);
+    border: 1px solid var(--accent-color-hover);
+    box-shadow: 0 0 10px var(--accent-color-hover);
     border-radius: 6px;
     scale: 1.1;
     z-index: 3;
@@ -215,7 +218,7 @@ nav .social {
 
 .content button{
     background-color: var(--primary-color);
-    color: var(--background-color);
+    color: var(--neutral-color);
     padding: 10px;
     border: none;
     margin-right: 20px;
@@ -225,10 +228,10 @@ nav .social {
     transition: all 0.5s ease;
 }
 .content button:hover{
-    background-color: var(--accent-color);
+    background-color: var(--background-accent-hover);
 }
 .content button a{
     text-decoration: none;
-    color: var(--background-color);
+    color: var(--neutral-color);
     font-weight: 700;
 }
