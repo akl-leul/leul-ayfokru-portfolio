@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navToggle.addEventListener('click', () => {
             if (navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active'); // Hide the mobile menu
+                navMenu.classList.add('active'); // Hide the mobile menu
 
         } else {
             navMenu.classList.remove('active'); // Show the mobile menu
