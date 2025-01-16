@@ -137,11 +137,11 @@ nav .social {
     margin: 0 auto;
     color: var(--neutral-color);
     padding: 10px;
-    min-height: 70vh;
+    min-height: 100vh;
     
     font-family: var(--primary-font);
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .container-fluid:nth-child(3){
