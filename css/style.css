@@ -274,7 +274,7 @@ nav .social {
 }
 #typewriter-text{
     font-size: 2rem;
-    color: var(--neutral-color);
+    color: var(--secondary-color-hover);
     border-right: 3px solid var(--accent-color);
     white-space: nowrap;
     overflow: hidden;
