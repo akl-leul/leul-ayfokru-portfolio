@@ -27,8 +27,10 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=rocket_launch" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-   
+   <script src="js/type.js"></script>
    <script src="js/script.js"></script>
 
 
@@ -93,16 +95,18 @@
                   I am
                   <span class="first">Leul Ayfokru</span>
                </h1>
-               <p id="home" class="skill">Frontend Developer | Android App Creator | Tech Enthusiast</p>
+               <p id="typewriter-text" class="skill">
+                  Frontend Developer | Android App Creator | Tech Enthusiast 
+               </p>
 <p id="home">
    I am a passionate and driven individual with a strong interest in technology and innovation. With a background
    in computer science and a strong foundation in programming languages, I am confident in my ability to creat
    high-quality software solutions that meet the needs of users.
 </p>
-               <button>
-                  <a href="#about">Learn More</a>
+               <button data-aos-delay="500" data-aos="fade-right">
+                  <a href="#about" >Learn More</a>
                </button>
-               <button>
+               <button data-aos-delay="500" data-aos="fade-left">
                   <a href="#projects">View Projects</a>
                </button>
             </div>
@@ -151,7 +155,7 @@ I'm always eager to collaborate and take on new challenges. If you're looking fo
                      </span>  Skills
                </h1>
                <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos-delay="500" data-aos="fade-up">
                      <i class="fa-brands fa-html5"></i>
                      <p>
                         HTML5
@@ -160,14 +164,14 @@ I'm always eager to collaborate and take on new challenges. If you're looking fo
                      
                      
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos-delay="1000" data-aos="fade-up">
                      <i class="fa-brands fa-css3-alt"></i>
                      <p>
                         
                      CSS3
                      </p>
                         </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos-delay="1500" data-aos="fade-up">
                      <i class="fa-brands fa-js"></i>
                      <p>
                         JavaScript
@@ -176,20 +180,20 @@ I'm always eager to collaborate and take on new challenges. If you're looking fo
          </div>
          
          <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos-delay="500" data-aos="fade-up">
                <i class="fa-brands fa-java"></i>
                <p>
                   Java
                </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos-delay="1000" data-aos="fade-up">
                <i class="fa-brands fa-dart-lang"></i>
                <p>
                   
                Dart
                </p>
                   </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos-delay="1500" data-aos="fade-up">
                <i class="fa-brands fa-bootstrap"></i>
                <p>
                   Bootstrap
@@ -197,20 +201,20 @@ I'm always eager to collaborate and take on new challenges. If you're looking fo
             </div>
    </div>
    <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos-delay="500" data-aos="fade-up">
          <i class="fa-brands fa-github"></i>
          <p>
             GitHub 
          </p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos-delay="1000" data-aos="fade-up">
          <i class="fa-brands fa-wordpress"></i>
          <p>
             
          WordPress
          </p>
             </div>
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos-delay="1500" data-aos="fade-up">
          <i class="fa-brands fa-figma"></i>
          <p>
             Figma
@@ -224,4 +228,7 @@ I'm always eager to collaborate and take on new challenges. If you're looking fo
       
             
 </body>
+<script>
+   AOS.init();
+ </script>
 </html>

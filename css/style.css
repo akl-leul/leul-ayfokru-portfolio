@@ -29,7 +29,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 30px 20px 30px;
     background-color: var(--primary-color);
     font-family: var(--primary-font);
     font-weight: 500;
@@ -37,7 +37,7 @@ nav {
     color: var(--neutral-color);
     border-bottom: 1px solid var(--background-accent);
     box-shadow: 0 0 10px var(--background-accent);
-    
+   
 }
 
 nav .logo a {
@@ -172,6 +172,7 @@ nav .social {
     text-align: left;
     box-shadow: 0 0 10px var(--accent-color);
     border-radius: 12px;
+    overflow: hidden;
 }
 .container-fluid:nth-child(3) .col-md-6{
     max-width: 1200px;
@@ -269,4 +270,28 @@ nav .social {
 }
 .hr{
     border: 1px solid var(--neutral-color);
+}
+#typewriter-text{
+    font-size: 2rem;
+    color: var(--neutral-color);
+    border-right: 3px solid var(--accent-color);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }

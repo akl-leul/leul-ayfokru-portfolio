@@ -1,5 +1,10 @@
-const text = "Frontend Developer | Android App Creator | Tech Enthusiast";
+const text = "";
 const typewriterElement = document.getElementById("typewriter-text");
+
+if (!typewriterElement) {
+    console.error("Typewriter element not found!");
+    // return; // Exit if the element is not found
+}
 
 let i = 0;
 let isDeleting = false;
@@ -12,7 +17,7 @@ function typeWriter() {
         i--;
         if (i === 0) {
             isDeleting = false;
-            setTimeout(typeWriter, 500); // Pause before typing again
+            setTimeout(typeWriter, 0); // No pause before typing again
         } else {
             setTimeout(typeWriter, deleteDelay);
         }
@@ -21,7 +26,7 @@ function typeWriter() {
         i++;
         if (i === text.length) {
             isDeleting = true;
-            setTimeout(typeWriter, 1000); // Pause before deleting
+            setTimeout(typeWriter, 0); // No pause before deleting
         } else {
             setTimeout(typeWriter, delay);
         }
