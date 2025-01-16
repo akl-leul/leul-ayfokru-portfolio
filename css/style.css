@@ -145,6 +145,12 @@ nav .social {
     align-items: center;
 }
 .container-fluid:nth-child(3){
+    background: url(
+
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: left;
@@ -197,6 +203,9 @@ nav .social {
     border-radius: 6px;
     scale: 1.1;
     z-index: 3;
+}
+.container-fluid:nth-child(3) .row .col-md-4 i{
+    color: var(--primary-color);
 }
 
 .container-fluid:nth-child(3) .row .col-md-8 .content i{
