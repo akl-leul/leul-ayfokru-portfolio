@@ -217,7 +217,7 @@ nav .social {
 }
 
 .content button{
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     color: var(--neutral-color);
     padding: 10px;
     border: none;
