@@ -272,7 +272,7 @@ nav .social {
     border: 1px solid var(--neutral-color);
 }
 #typewriter-text{
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--neutral-color);
     border-right: 3px solid var(--accent-color);
     white-space: nowrap;
