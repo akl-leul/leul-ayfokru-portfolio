@@ -33,7 +33,10 @@ nav {
     background-color: var(--primary-color);
     font-family: var(--primary-font);
     font-weight: 500;
- 
+    font-size: 16px;
+    color: var(--neutral-color);
+    border-bottom: 1px solid var(--background-accent);
+    box-shadow: 0 0 10px var(--background-accent);
     
 }
 
@@ -60,8 +63,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 nav .onMobile {
    display: none;
+   position: fixed;
 }
 
 nav #icon {
@@ -70,8 +75,18 @@ nav #icon {
 
 nav ul li a:hover {
     color: var(--secondary-color-hover);
+    transition: all 0.5s ease;
+    border-bottom: 3px solid var(--secondary-color-hover);
+    animation: bord 0.1s ease;
 }
-
+@keyframes bord {
+    0%{
+        border-width: 0px;
+    }
+    100%{
+        border-width: 3px;
+    }
+}
 nav .social {
     display: flex;
     justify-content: space-between;
@@ -105,7 +120,8 @@ nav .social {
         right: 0;
         width: 50%;
         height: 100%;
-        background: var(--primary-color);
+        background: #3a3d5b06;
+        backdrop-filter: blur(30px);
     }
 
     nav .onMobile li {
@@ -193,13 +209,14 @@ nav .social {
     backdrop-filter: blur(10px);
     transition: all 0.5s ease;
 }
-.container-fluid:nth-child(3) .row .col-md-4:hover{
+.container-fluid:nth-child(3) .row .col-md-4:hover {
     margin-top: -20px;
     border: 1px solid var(--accent-color-hover);
     box-shadow: 0 0 10px var(--primary-color);
     border-radius: 6px;
     scale: 1.1;
     z-index: 3;
+    transition: transform 0.3s ease; /* Added transition for smooth movement */
 }
 .container-fluid:nth-child(3) .row .col-md-4 i{
     color: var(--primary-color);

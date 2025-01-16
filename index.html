@@ -43,7 +43,7 @@
          <a href="index.html">Leul</a>
          </div>
          <ul>
-            <li class="icon" id="icon">
+            <li class="icon" id="icon" onclick="showNav()">
                <i class="fa-solid fa-cubes"></i>
             </li>
 
@@ -54,7 +54,8 @@
 
 
          </ul> 
-         <ul class="onMobile">
+         <ul class="onMobile" id="onMobile">
+            <li><i class="fa-solid fa-xmark" onclick="closeNav()" id="close"></i></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
