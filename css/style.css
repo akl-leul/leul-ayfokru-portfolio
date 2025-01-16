@@ -212,12 +212,12 @@ nav .social {
     }  
 }
  .first {
-    color: var(--accent-color);
+    color: var(--secondary-color);
     font-family: var(--secondary-font);
 }
 
 .content button{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--neutral-color);
     padding: 10px;
     border: none;
