@@ -1,4 +1,4 @@
-const text = "";
+const text = "Frontend Developer | Android App Creator";
 const typewriterElement = document.getElementById("typewriter-text");
 
 if (!typewriterElement) {
