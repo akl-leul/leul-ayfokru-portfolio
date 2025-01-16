@@ -81,7 +81,7 @@ nav .social {
     flex-direction: row;
 }
 
-.onMobile:active {
+.onMobile.active {
     display: flex;
 }
 

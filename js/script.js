@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.querySelector('.icon'); // Updated to match the button class
+    const navToggle = document.querySelector('.icon');
     const navMenu = document.querySelector('.onMobile');
 
-    navToggle.addEventListener('click', () => {
-        if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active'); // Hide the mobile menu
-        } else {
-            navMenu.classList.add('active'); // Show the mobile menu
-        }
-    });
+    if (navToggle && navMenu) { // Check if elements exist
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    } else {
+        console.error('Elements not found: Check your HTML structure or class names.');
+    }
+});
 
     // Smooth Scrolling for Navigation Links
     const navLinks = document.querySelectorAll('a');
