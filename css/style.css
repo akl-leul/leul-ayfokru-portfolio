@@ -387,6 +387,7 @@ a{
 .contact .col-md-6 div p{
     font-size: 1.5rem;
     transition: all 0.1s ease;
+    cursor: pointer;
 }
 .contact .col-md-6 div p:hover{
     margin-top: -20px;
