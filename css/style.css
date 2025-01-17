@@ -381,3 +381,6 @@ a{
     align-items: center;
     padding: 20px;
 }
+.contact .col-md-6 div{
+    font-size: 40px;
+}
