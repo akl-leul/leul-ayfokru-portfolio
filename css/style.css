@@ -416,14 +416,15 @@ footer{
   }
   
   input, textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
+    outline: none;
   }
   
   form button {
-    background-color: #4CAF50;
+    background-color: var(--accent-color);
     color: white;
     padding: 10px 20px;
     border: none;
