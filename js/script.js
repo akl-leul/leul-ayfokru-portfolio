@@ -5,29 +5,30 @@ function showNav() {
 function closeNav(){
     document.getElementById('onMobile').style.display = 'none';
 }
-//get all links with a
-const link = document.querySelectorAll('a');
 
+// Get all links with 'a'
+const links = document.querySelectorAll('a');
 
-//add event listner to each link 
-link.forEach((link) => {
+// Add event listener to each link
+links.forEach((link) => {
     link.addEventListener('click', (e) => {
-        //prevent default
+        // Prevent default behavior
         e.preventDefault();
 
-        //get href attribute
+        // Get href attribute
         const href = link.getAttribute('href');
 
-        //get the target element
+        // Get the target element
         const target = document.querySelector(href);
 
-        //if the target element exist, scroll to the target element
+        // If the target element exists, scroll to the target element
         if (target) {
             target.scrollIntoView({ 
                 behavior: 'smooth', 
             });
-            }
+
+            // Hide the 'onMobile' element after scroll
             document.getElementById('onMobile').style.display = 'none';
-            });
-        
+        }
+    });
 });
