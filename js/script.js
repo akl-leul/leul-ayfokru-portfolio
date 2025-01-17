@@ -25,6 +25,7 @@ links.forEach((link) => {
         if (target) {
             target.scrollIntoView({ 
                 behavior: 'smooth', 
+                block: 'start',
             });
 
             // Hide the 'onMobile' element after scroll
