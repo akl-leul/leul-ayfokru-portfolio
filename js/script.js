@@ -12,24 +12,20 @@ function closeNav(){
         // Add event listener to each link
         links.forEach((link) => {
             link.addEventListener('click', (e) => {
-                // Prevent default behavior
                 e.preventDefault();
-
-                // Get href attribute
+                console.log('Link clicked:', link); // Logs the clicked link to the console
+        
                 const href = link.getAttribute('href');
-
-                // Get the target element
                 const target = document.querySelector(href);
-
-                // If the target element exists, scroll to the target element
+        
                 if (target) {
-                    target.scrollIntoView({ 
-                        behavior: 'smooth', 
-                        block: 'start',
-                    });
-
-                    // Hide the 'onMobile' element after scroll
+                    console.log('Scrolling to:', target); // Logs the target section
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     document.getElementById('onMobile').style.display = 'none';
+                    console.log('#onMobile is now hidden');
+                } else {
+                    console.log('Target not found:', href); // Logs if the target doesn't exist
                 }
             });
         });
+        
