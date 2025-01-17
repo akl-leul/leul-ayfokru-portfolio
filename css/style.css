@@ -335,6 +335,7 @@ a{
 }
 .projects .row .col-md-8 .content .row .col-md-4 a{
     font-size: 30px;
+    color: var(--accent-color);
 }
 .projects .row h2{
     color: var(--secondary-color);
