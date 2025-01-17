@@ -365,7 +365,7 @@ a{
     border-radius: 12px;
     overflow: hidden;
 }
-.contact .col-md-6 {
+.contact .col-md-6 div{
     display: flex;
     flex-direction: row;
     gap: 20px;
