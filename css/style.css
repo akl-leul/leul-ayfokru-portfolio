@@ -384,6 +384,10 @@ a{
 .contact .col-md-6 div{
     font-size: 2rem;
 }
+.contact .col-md-6 div p{
+    font-size: 1.5rem;
+    transition: all 1s ease;
+}
 .contact .col-md-6 div p:hover{
     margin-top: -20px;
     color: var(--secondary-color-hover);
