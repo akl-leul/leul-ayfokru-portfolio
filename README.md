@@ -27,7 +27,7 @@ To run this project locally:
 2. Open the index.html file in your browser.
 
 ## Screenshots
-![Screenshot 1](img/screenshot1.png)
+![Screenshot 1](img/image.png)
 
 
 ## Contact
