@@ -386,7 +386,7 @@ a{
 }
 .contact .col-md-6 div p{
     font-size: 1.5rem;
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 .contact .col-md-6 div p:hover{
@@ -395,5 +395,5 @@ a{
     font-size: 2rem;
 }
 .contact .col-md-6 div p:hover > :not(:hover){
-    filter: brightness(0.8);
+    color: var(--neutral-color)
 }
