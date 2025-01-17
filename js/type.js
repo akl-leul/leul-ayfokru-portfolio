@@ -8,8 +8,8 @@ if (!typewriterElement) {
 
 let i = 0;
 let isDeleting = false;
-let delay = 100;  // Typing speed
-let deleteDelay = 50;  // Deleting speed
+let delay = 1;  // Typing speed
+let deleteDelay = 5;  // Deleting speed
 
 function typeWriter() {
     if (isDeleting) {
