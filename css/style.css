@@ -400,7 +400,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px var(--accent-color);
+    box-shadow: 0 0 10px var(--secondary-color-hover);
     border-radius: 12px;
     overflow: hidden;
     height: fit-content;
