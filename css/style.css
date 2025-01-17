@@ -153,7 +153,7 @@ nav .social {
     margin: 0 auto;
     color: var(--neutral-color);
     padding: 10px;
-    min-height: 100vh;
+    min-height: calc(fit-content + 100px);
     font-family: var(--primary-font);
     text-align: center;
     display: flex;
