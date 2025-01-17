@@ -19,4 +19,4 @@ navLinks.forEach(link => {
         });
         document.getElementById('onMobile').style.display = 'none';
     });
-});})
+});
