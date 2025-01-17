@@ -367,7 +367,7 @@ a{
 }
 .contact .row .col-md-6{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
     justify-content: left;
     align-items: center;
@@ -383,4 +383,8 @@ a{
 }
 .contact .col-md-6 div{
     font-size: 20px;
+}
+.contact .col-md-6 div p:hover{
+    margin-top: -20px;
+    color: var(--secondary-color-hover);
 }
