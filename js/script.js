@@ -4,38 +4,19 @@ function showNav() {
 
 function closeNav(){
     document.getElementById('onMobile').style.display = 'none';
-}
-// Get all links with 'a'
-const links = document.querySelectorAll('a');
+}// Smooth Scrolling for Navigation Links
+const navLinks = document.querySelectorAll('nav ul li a');
 
-// Add event listener to each link
-links.forEach(link => {
+navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        // Prevent default behavior
-        e.preventDefault();
+        e.preventDefault(); // Prevent default anchor click behavior
+        const targetId = link.getAttribute('href'); // Get the target section ID
+        const targetSection = document.querySelector(targetId); // Select the target section
 
-        // Get the href attribute
-        const href = link.getAttribute('href');
-
-        // Get the target element
-        const target = document.querySelector(href);
-
-        // If the target element exists, scroll to it smoothly
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth', // Smooth scrolling
-                block: 'start', // Align to the start of the element
-            });
-        } else {
-            console.error(`Target not found for href: ${href}`);
-        }
-
-        // Hide the #onMobile element if it exists
-        const onMobile = document.getElementById('onMobile');
-        if (onMobile) {
-            onMobile.style.display = 'none';
-        } else {
-            console.warn('#onMobile element not found');
-        }
+        // Scroll to the target section smoothly
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+        document.getElementById('onMobile').style.display = 'none';
     });
-});
+});})
