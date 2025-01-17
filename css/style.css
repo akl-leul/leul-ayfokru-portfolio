@@ -365,7 +365,7 @@ a{
     border-radius: 12px;
     overflow: hidden;
     height: fit-content;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .contact .row .col-md-6{
     display: flex;
