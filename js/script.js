@@ -27,6 +27,7 @@ link.forEach((link) => {
                 behavior: 'smooth', 
             });
             }
+            document.getElementById('onMobile').style.display = 'none';
             });
-        document.getElementById('onMobile').style.display = 'none';
+        
 });
