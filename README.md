@@ -17,28 +17,19 @@ This repository contains the source code for my personal portfolio website. It s
 
 ## Live Demo
 Check out the live website here: [My Portfolio](https://leul-ayfokru-portfolio.vercel.app) 
-## Technologies Used
-- HTML5 and CSS3
-- JavaScript
-- Bootstrap
-- Added new frameworks and libraries as needed.
-
-
-
-
 
 ## Usage
 To run this project locally:
  1. Clone the repository:
    ```bash
-   
    git clone https://github.com/akl-leul/leul-ayfokru-portfolio.git
-```
+   ```
 2. Open the index.html file in your browser.
+
+## Screenshots
+![Screenshot 1](img/screenshot1.png)
 
 
 ## Contact
 Feel free to reach out if you have any questions or opportunities:
-
-
 📧 Email: abateisking@gmail.com - Updated for new inquiries.
