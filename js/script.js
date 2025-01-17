@@ -4,7 +4,9 @@ function showNav() {
 
 function closeNav(){
     document.getElementById('onMobile').style.display = 'none';
-}// Smooth Scrolling for Navigation Links
+}
+
+// Smooth Scrolling for Navigation Links
 const navLinks = document.querySelectorAll('nav ul li a');
 
 navLinks.forEach(link => {
@@ -20,3 +22,11 @@ navLinks.forEach(link => {
         document.getElementById('onMobile').style.display = 'none';
     });
 });
+
+// Hide the loader after 5 seconds
+setTimeout(() => {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.style.display = 'none';
+    }
+}, 5000);
