@@ -396,3 +396,13 @@ a{
     color: var(--accent-color-hover);
     font-size: 2rem;
 }
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--accent-color);
+    border-radius: 12px;
+    overflow: hidden;
+    height: fit-content;
+    padding: 10px;
+}
