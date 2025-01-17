@@ -1,24 +1,24 @@
 # Hi 👋 there,
 
-# Leul Ayfokru Portfolio
+# 💡 Leul Ayfokru Portfolio
 
 This repository contains the source code for my personal portfolio website. It showcases my skills, projects, and achievements as a **frontend website and Android application developer**.
 
-## Features
+## 🌟 Features
 - Responsive design for all devices.
 - Sections for About Me, Skills, Projects, Certifications, and Contact.
 - Optimized for SEO with meta tags and keywords.
 - Clean and modern user interface with a professional color palette.
 
-## Technologies Used
+## 📱💻 Technologies Used
 - HTML5 and CSS3
 - JavaScript
 - Bootstrap
 
-## Live Demo
+## 💻 Live Demo
 Check out the live website here: [My Portfolio](https://leul-ayfokru-portfolio.vercel.app) 
 
-## Usage
+## 🔑 Usage
 To run this project locally:
  1. Clone the repository:
    ```bash
@@ -26,10 +26,12 @@ To run this project locally:
    ```
 2. Open the index.html file in your browser.
 
-## Screenshots
+## 📸 Screenshots
 ![Screenshot 1](img/image.png)
 
 
-## Contact
+## ☎ Contact
 Feel free to reach out if you have any questions or opportunities:
+
+
 📧 Email: abateisking@gmail.com - Updated for new inquiries.
