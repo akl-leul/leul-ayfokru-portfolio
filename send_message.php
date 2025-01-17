@@ -1,32 +1,30 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Sanitize user input
+  // Sanitize user input to prevent XSS attacks
   $name = htmlspecialchars($_POST['name']);
   $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
   $message = htmlspecialchars($_POST['message']);
 
-  // Set up email content and headers
-  $to = "abateisking@gmail.com"; 
+  // Set recipient email address
+  $to = "abateisking@gmail.com";
+
+  // Set email subject and body
   $subject = "New Message from Contact Form";
   $body = "You have received a new message from the contact form.\n\n" .
           "Name: $name\n" .
           "Email: $email\n\n" .
           "Message:\n$message";
 
-  $headers = "From: $email" . "\r\n" .
-            "Reply-To: $email" . "\r\n" .
+  // Set email headers
+  $headers = "From: $email \r\n" .
+            "Reply-To: $email \r\n" .
             "Content-Type: text/plain; charset=UTF-8";
 
-  // Use a function like wp_mail or a mail server to send the email
-  if (wp_mail($to, $subject, $body, $headers)) {
-    // Redirect back to the previous page
-    header("Location: " . $_SERVER['HTTP_REFERER']); 
-    exit; 
+  // Send email using the mail function (configure your server if needed)
+  if (mail($to, $subject, $body, $headers)) {
+    echo "Message sent successfully!"; // Display success message on form submission
   } else {
-    // Display an error message
-    echo "Failed to send message. Please try again later.";
+    echo "Failed to send message. Please try again later."; // Display error message
   }
-} else {
-  echo "Invalid request method.";
 }
 ?>

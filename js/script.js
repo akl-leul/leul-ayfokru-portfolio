@@ -60,3 +60,19 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     // Clear the form fields after submission
     document.getElementById('contact-form').reset();
 });
+
+const form = document.getElementById('contact-form');
+const successMessage = document.createElement('p');
+successMessage.textContent = 'Message sent successfully!';
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent default form submission
+
+  // Basic form validation (optional)
+  if (form.checkValidity()) {
+    form.submit(); // Submit the form to the server-side script
+    form.appendChild(successMessage);
+  } else {
+    // Handle form validation errors (e.g., display error messages)
+  }
+});
