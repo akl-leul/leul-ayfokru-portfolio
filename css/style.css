@@ -391,6 +391,9 @@ a{
 }
 .contact .col-md-6 div p:hover{
     margin-top: -20px;
-    color: var(--secondary-color-hover);
+    color: var(--accent-color-hover);
     font-size: 2rem;
+}
+.contact .col-md-6 div p:hover > :not(:hover){
+    filter: brightness(0.8);
 }
