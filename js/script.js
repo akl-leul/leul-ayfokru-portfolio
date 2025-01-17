@@ -5,16 +5,28 @@ function showNav() {
 function closeNav(){
     document.getElementById('onMobile').style.display = 'none';
 }
-// Add smooth scrolling to all links
-document.querySelectorAll('a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        // Scroll to the target element
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+//get all links with a
+const link = document.querySelectorAll('a');
 
-        // Hide the onMobile element when a link is clicked
+
+//add event listner to each link 
+link.forEach((link) => {
+    link.addEventListener('click', (e) => {
+        //prevent default
+        e.preventDefault();
+
+        //get href attribute
+        const href = link.getAttribute('href');
+
+        //get the target element
+        const target = document.querySelector(href);
+
+        //if the target element exist, scroll to the target element
+        if (target) {
+            target.scrollIntoView({ 
+                behavior: 'smooth', 
+            });
+            }
+            });
         document.getElementById('onMobile').style.display = 'none';
-    });
 });
