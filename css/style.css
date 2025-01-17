@@ -364,6 +364,8 @@ a{
     box-shadow: 0 0 10px var(--accent-color);
     border-radius: 12px;
     overflow: hidden;
+    height: fit-content;
+    padding-bottom: 30px;
 }
 .contact .row .col-md-6{
     display: flex;
@@ -393,7 +395,4 @@ a{
     margin-top: -20px;
     color: var(--accent-color-hover);
     font-size: 2rem;
-}
-.contact .col-md-6 div p:hover > :not(:hover){
-    color: var(--neutral-color)
 }
