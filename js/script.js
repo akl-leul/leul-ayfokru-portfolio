@@ -20,73 +20,43 @@ document.querySelectorAll('a').forEach(item => {
         item.style.transform = 'translate(0, 0)'; // Reset position on mouse leave
     });
 });
-    // Smooth Scrolling for Navigation Links
-    const navLinks = document.querySelectorAll('a');
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default anchor click behavior
-            const targetId = link.getAttribute('href'); // Get the target section ID
-            const targetSection = document.querySelector(targetId); // Select the target section
+// Smooth Scrolling for Navigation Links
+const navLinks = document.querySelectorAll('a');
 
-            // Scroll to the target section smoothly
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });document.addEventListener('DOMContentLoaded', () => {
-        const links = document.querySelectorAll('a'); // Select all nav links
-        const navMenu = document.getElementById('onMobile'); // Mobile navigation menu
-    
-        links.forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault(); // Prevent default anchor behavior
-    
-                // Get the target section's ID from the href attribute
-                const targetId = link.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-    
-                if (targetElement) {
-                    // Scroll to the target element smoothly
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const links = document.querySelectorAll('nav a'); // Select all nav links
-                        const navMenu = document.getElementById('onMobile'); // Mobile navigation menu
-                    
-                        links.forEach(link => {
-                            link.addEventListener('click', (event) => {
-                                event.preventDefault(); // Prevent default anchor behavior
-                    
-                                // Get the target section's ID from the href attribute
-                                const targetId = link.getAttribute('href');
-                                const targetElement = document.querySelector(targetId);
-                    
-                                if (targetElement) {
-                                    // Scroll to the target element smoothly
-                                    targetElement.scrollIntoView({
-                                        behavior: 'smooth',
-                                        block: 'start'
-                                    });
-                                }
-                    
-                                
-                                
-                            });
-                        });
-                    });
-                    
-                }
-    
-                // Hide the mobile navigation menu
-                if (navMenu) {
-                    navMenu.style.display = 'none';
-                }
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default anchor click behavior
+        const targetId = link.getAttribute('href'); // Get the target section ID
+        const targetSection = document.querySelector(targetId); // Select the target section
+
+        // Scroll to the target section smoothly
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
             });
-        });
+        }
     });
-    
+});
+
+// Function to handle contact form submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get the values from the form fields
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Here you would typically send the data to a server or an email API
+    // For demonstration, we'll just log the values to the console
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+
+    // You can use an email service API here to send the email
+    // Example: EmailJS, Formspree, etc.
+
+    // Clear the form fields after submission
+    document.getElementById('contact-form').reset();
+});
