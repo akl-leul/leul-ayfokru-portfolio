@@ -5,27 +5,37 @@ function showNav() {
 function closeNav(){
     document.getElementById('onMobile').style.display = 'none';
 }
+// Get all links with 'a'
+const links = document.querySelectorAll('a');
 
-        // Get all links with 'a'
-        const links = document.querySelectorAll('a');
+// Add event listener to each link
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        // Prevent default behavior
+        e.preventDefault();
 
-        // Add event listener to each link
-        links.forEach((link) => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                console.log('Link clicked:', link); // Logs the clicked link to the console
-        
-                const href = link.getAttribute('href');
-                const target = document.querySelector(href);
-        
-                if (target) {
-                    console.log('Scrolling to:', target); // Logs the target section
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    document.getElementById('onMobile').style.display = 'none';
-                    console.log('#onMobile is now hidden');
-                } else {
-                    console.log('Target not found:', href); // Logs if the target doesn't exist
-                }
+        // Get the href attribute
+        const href = link.getAttribute('href');
+
+        // Get the target element
+        const target = document.querySelector(href);
+
+        // If the target element exists, scroll to it smoothly
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth', // Smooth scrolling
+                block: 'start', // Align to the start of the element
             });
-        });
-        
+        } else {
+            console.error(`Target not found for href: ${href}`);
+        }
+
+        // Hide the #onMobile element if it exists
+        const onMobile = document.getElementById('onMobile');
+        if (onMobile) {
+            onMobile.style.display = 'none';
+        } else {
+            console.warn('#onMobile element not found');
+        }
+    });
+});
