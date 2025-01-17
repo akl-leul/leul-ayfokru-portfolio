@@ -20,21 +20,21 @@ document.querySelectorAll('a').forEach(item => {
         item.style.transform = 'translate(0, 0)'; // Reset position on mouse leave
     });
 });
-
-// Smooth Scrolling for Navigation Links
-const navLinks = document.querySelectorAll('a');
+const navLinks = document.querySelectorAll('a[href^="#"]'); // Select only links with "#"
 
 navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default anchor click behavior
-        const targetId = link.getAttribute('href'); // Get the target section ID
-        const targetSection = document.querySelector(targetId); // Select the target section
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').substring(1); // Remove "#"
+    const targetSection = document.getElementById(targetId); 
 
-        // Scroll to the target section smoothly
-        if (targetSection) {
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
+    if (targetSection) { 
+      window.scrollTo({
+        top: targetSection.offsetTop, 
+        behavior: 'smooth' 
+      });
+    } else {
+      console.error(`Target section with ID "${targetId}" not found.`); 
+    }
+  });
 });
