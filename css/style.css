@@ -370,7 +370,7 @@ a{
     flex-direction: row;
     gap: 20px;
     justify-content: left;
-    align-items: left;
+    align-items: center;
     width: 100%;
 }
 .contact .col-md-6 div{
