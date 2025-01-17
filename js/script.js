@@ -26,25 +26,22 @@ document.querySelectorAll('a').forEach((item: HTMLElement) => {
     });
 });
 
-const navLinks = document.querySelectorAll('a');
+const navLinks = document.querySelectorAll('a[href^="#"]'); 
 
-navLinks.forEach((link: HTMLAnchorElement) => {
-    link.addEventListener('click', (e: MouseEvent) => {
-        e.preventDefault(); // Prevent default anchor click behavior
-        const targetId = link.getAttribute('href'); // Get the target section ID
-        const targetSection = document.querySelector(targetId); // Select the target section
+navLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
 
-        // Scroll to the target section smoothly
-        if (targetSection) {
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+    const targetId = link.getAttribute('href').substring(1); // Remove the "#" 
+    const targetSection = document.getElementById(targetId);
 
-        // Hide the mobile navigation menu
-        const navMenu = document.getElementById('onMobile') as HTMLElement;
-        if (navMenu) {
-            navMenu.style.display = 'none';
-        }
-    });
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const navMenu = document.getElementById('onMobile');
+    if (navMenu) {
+      navMenu.style.display = 'none'; 
+    }
+  });
 });
