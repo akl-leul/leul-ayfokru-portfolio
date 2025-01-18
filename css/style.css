@@ -406,6 +406,7 @@ footer{
     border-radius: 12px;
     overflow: hidden;
     height: fit-content;
+    margin-top: 50px;
     color: var(--neutral-color);
     padding: 10px;
     font-family: var(--primary-font);
