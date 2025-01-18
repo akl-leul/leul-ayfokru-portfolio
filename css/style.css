@@ -101,7 +101,11 @@ nav .social {
 .onMobile.active {
     display: flex;
 }
-
+@media (min-width:768px) {
+    .onMobile {
+        display: none;
+    }
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     nav .onPc {
