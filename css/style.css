@@ -404,7 +404,9 @@ footer{
     border-radius: 12px;
     overflow: hidden;
     height: fit-content;
+    color: var(--neutral-color);
     padding: 10px;
+    font-family: var(--primary-font);
 }
 .loader{
     display: flex;
