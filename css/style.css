@@ -302,7 +302,7 @@ nav .social {
         border-color: transparent;
     }
 }
-.projects{
+.projects, .certificates{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -573,18 +573,4 @@ footer{
     40% {
       transform: rotate(50deg) scale(1);
     }
-  }
-.certificates{
-    max-width: 1200px;
-    margin: 0 auto;
-    color: var(--neutral-color);
-    padding: 10px;
-    min-height: 100vh;
-    font-family: var(--primary-font);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-}
+  } 

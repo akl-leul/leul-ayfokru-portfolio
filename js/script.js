@@ -11,7 +11,12 @@ const navLinks = document.querySelectorAll('nav ul li a');
 
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default anchor click behavior
+        const href = link.getAttribute('href');
+        if (href.startsWith('http') || href.startsWith('https')) {
+            // Allow default behavior for external links
+            return;
+        }
+        e.preventDefault(); // Prevent default anchor click behavior for internal links
         const targetId = link.getAttribute('href'); // Get the target section ID
         const targetSection = document.querySelector(targetId); // Select the target section
 
