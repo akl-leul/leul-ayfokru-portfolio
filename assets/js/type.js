@@ -1,10 +1,6 @@
-const text = "Frontend Developer | Android App Creator";
+const text = "Frontend Web | Android App Developer";
 const typewriterElement = document.getElementById("typewriter-text");
-
-if (!typewriterElement) {
-    console.error("Typewriter element not found!");
-    // return; // Exit if the element is not found
-}
+ 
 
 let i = 0;
 let isDeleting = false;
