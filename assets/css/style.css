@@ -232,6 +232,7 @@ strong{
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    text-align: left;
 }
 .service .skill img{
     width: 80%;
