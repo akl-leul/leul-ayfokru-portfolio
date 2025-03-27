@@ -230,8 +230,12 @@ strong{
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
- 
+.service .skill img{
+    width: 100%;
+}
 @media (max-width: 768px) {
    body{
     padding: 10px; 
