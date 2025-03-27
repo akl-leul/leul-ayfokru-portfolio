@@ -227,14 +227,14 @@ strong{
     justify-content: center;
  }
 .service .skill{
-    width: 50%;
+    width: 300%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
 }
 .service .skill img{
-    width: 100%;
+    width: 80%;
 }
 @media (max-width: 768px) {
    body{
