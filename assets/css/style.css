@@ -42,7 +42,7 @@ nav {
 nav .logo a {
     color: var(--neutral-color);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -70,8 +70,9 @@ nav .onMobile {
 
 nav #icon {
     display: none;
+    font-size: 16px;
 }
-
+ 
 nav ul li a:hover {
     color: var(--secondary-color-hover);
     transition: all 0.5s ease;
@@ -107,6 +108,13 @@ nav .social {
 }
 /* Responsive styles */
 @media (max-width: 768px) {
+    nav{
+        background-color: var(--secondary-color);
+        border-radius: 50px;
+        height: fit-content; 
+        align-items: center;
+        padding:0 15px 0 15px;
+    }
     nav .onPc {
         display: none; /* Hide desktop menu */
     }
@@ -121,12 +129,13 @@ nav .social {
         align-items: center;
         gap: 20px;
         position: absolute;
-        top: 60px; /* Adjust based on your layout */
-        right: 0;
-        width: 50%;
-        height: 100%;
-        background: #3a3d5b06;
+        top: 35px; /* Adjust based on your layout */
+        left: 0;
+        width: 70%;
+        height: fit-content;
+        background: rgba(0, 255, 0, 0.486);
         backdrop-filter: blur(30px);
+        border-radius: 0 12px 12px 0;
     }
 
     nav .onMobile li {
@@ -228,6 +237,7 @@ strong{
     justify-content: space-around;
     text-align: left; 
     flex-wrap: wrap; 
+    overflow-y: hidden;
  }
 .service .skill{
     width: 25%;
@@ -250,6 +260,7 @@ strong{
     width: 100%;
     font-size: 30px; 
 }
+
 @media (max-width: 768px) {
    body{
     padding: 10px; 
@@ -401,11 +412,14 @@ a{
     align-items: left;
     justify-content: left;
     text-align: left;
-    box-shadow: 0 0 10px var(--accent-color);
+    box-shadow: 0 0 10px var(--secondary-color);
     border-radius: 12px;
     overflow: hidden;
     height: fit-content;
     padding-bottom: 10px;
+}
+.contact .row{
+    width: 100%;
 }
 .contact .row .col-md-6{
     display: flex;
@@ -435,17 +449,13 @@ a{
     margin-top: -20px;
     color: var(--accent-color-hover);
     font-size: 2rem;
-}
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 10px var(--background-accent);
-    border-radius: 12px;
-    overflow: hidden;
-    height: fit-content;
-    margin-top: 50px;
-    color: var(--neutral-color);
-    padding: 10px;
-    font-family: var(--primary-font);
 } 
+form{
+    width: 100%;
+}
+form #status{
+    display: flex;
+    width: 80%;
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 12px;
+}
