@@ -29,7 +29,9 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=captive_portal" />
    <script src="assets/js/type.js"></script>
    <script src="assets/js/script.js"></script>
-
+   <script src="assets/js/message.js"></script>
+   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+   
 
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
@@ -123,7 +125,7 @@
       <div class="row">
          <div class="col-md-8">
             <h1 id="services">
-                
+              <i class="fa-solid fa-tools"></i>  
                Services
                <hr class="hr">
             </h1>
@@ -133,25 +135,30 @@
                <div>
 <div class="skill-list">
                   <div class="skill">
-                     <img src="assets/img/website.jpg" alt="web development" srcset="">
+                    <i class="fa-solid fa-laptop-code"></i>
                      <p>Website development</p>
                   </div>
                   <div class="skill">
-                     <img src="assets/img/android.jpg" alt="android app dev" srcset="">
+                     <i class="fa-solid fa-mobile-alt"></i>
                      <p>
                         Android app development
                      </p>
                   </div>
-</div>
-<div class="skill-list">
+ 
                   <div class="skill">
-                     <img src="assets/img/seo.png" alt="seo " srcset="">
-                     <p>SEO</p>
+                     <i class="fa-solid fa-chart-line"></i>
+                     <p>Search Engine Optimization</p>
                   </div>
                   <div class="skill">
-                     <img src="assets/img/ai.png" alt="ai integrated web" srcset="">
+                     <i class="fa-solid fa-robot"></i>
                      <p>
                         AI integrated Website
+                     </p>
+                  </div>
+                  <div class="skill">
+                     <i class="fa-solid fa-headset"></i>
+                     <p>
+                        ChatBot Development
                      </p>
                   </div>
                </div> 
@@ -207,7 +214,7 @@ I'm always eager to collaborate and take on new challenges. If you're looking fo
          <div class="col-md-8">
             <div class="content">
                <h1 id="skills">
-                  <i class="fa-regular fa-user"></i>
+                  <i class="fa-solid fa-graduation-cap"></i>
                   Skills
                   <hr class="hr">
                </h1> 
@@ -484,7 +491,7 @@ I'm always eager to collaborate and take on new challenges. If you're looking fo
    <!-- Contact Section -->   
    <div class="container-fluid contact">
       <div class="row">
-         <div class="col-md-12">
+         <div class="col-md-8">
             <h1 id="contact">Contact
                <hr class="hr">
             </h1>
@@ -559,10 +566,41 @@ I'm always eager to collaborate and take on new challenges. If you're looking fo
             </div>
            
    </div>
+   <div class="row">
+      <div class="col-md-8">
+         <div class="content">
+            <form id="contact-form">
+               <h1>
+                 <center>
+                   Contact the Developer
+                 </center>
+                
+               </h1>
+               <div>
+           <i class="fa-solid fa-user"></i>
+                 <input type="text" id="name" name="name" placeholder="Name" required=""><br><br>
+               </div>
+               <div>
+                 <i class="fa-solid fa-envelope"></i>
+                 <input type="email" id="email" name="email" placeholder="Email" required=""><br><br>
+           
+               </div>
+                <div>
+               <i class="fa-solid fa-message"></i>
+                 <textarea id="message" name="message" placeholder="Message" required=""></textarea><br><br>
+           
+                </div>
+                
+                 <button type="submit">Send <i class="fa-solid fa-paper-plane"></i></button>
+                 <div id="status" style="display: none;"></div>
+             </form>
+         </div>
+      </div>
+   </div>
 </div>
    </div>
    <br>
-   <!--certeficates-->
+   
   
 <br>
 <br>
