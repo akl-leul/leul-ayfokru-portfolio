@@ -1,10 +1,8 @@
 function showNav() {
-    document.getElementById('onMobile').style.display = 'flex';
-    document.getElementById('icon').style.display = 'none';
+    document.getElementById('onMobile').style.display = 'flex'; 
 }
 
 function closeNav(){
-    document.getElementById('onMobile').style.display = 'none';
-    document.getElementById('icon').style.display = 'flex';
+    document.getElementById('onMobile').style.display = 'none'; 
 }
 
