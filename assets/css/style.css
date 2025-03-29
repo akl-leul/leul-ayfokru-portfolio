@@ -455,7 +455,7 @@ form{
     width: 50%;
 }
 form h3{
-    font-size: 12px;
+    font-size: 19px;
 }
 form #status{
     display: none;
@@ -483,6 +483,9 @@ form button{
 }
 form button:active{
     background: var(--background-accent);
+}
+form i{
+    font-size
 }
 @media (max-width: 768px) {
     form{
