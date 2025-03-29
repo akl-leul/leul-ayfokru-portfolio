@@ -108,6 +108,7 @@ nav .social {
     border-radius: 50%;
     display: flex;
     width: 30px;
+    height: 3
     justify-content: center;
     align-items: center;
     background: #fff;
