@@ -110,7 +110,7 @@ nav .social {
     width: 30px;
     justify-content: center;
     align-items: center;
-    background: #fff
+    background: #fff;
 }
 .onMobile.active {
     display: flex;
