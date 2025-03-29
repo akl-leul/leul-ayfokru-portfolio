@@ -109,6 +109,9 @@
                  View Projects <i class="fa-solid fa-folder"></i>
                </button></a> 
             </div>
+            <div class="back-top" onclick="backTop()">
+               <i class="fa-solid fa-up"></i>sdfsd
+            </div>
          
          </div>
       </div>
@@ -305,33 +308,7 @@
 
                      </iframe>
                   </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-4" >
-                     <h2>ChemLab - Virtual Chemistry Laboratory</h2>
-                     <p>
-                        ChemLab is a virtual chemistry lab platform designed to simulate real-world experiments, making chemistry education interactive and accessible. It features realistic experiment simulations, detailed learning modules, and a responsive design for seamless use across devices. This project showcases my ability to combine technology and education to create innovative learning tools.
-                     </p>
-                    <div class="div">
-                      <a href="https://chemlab-red.vercel.app/"
-                        target="_blank">
-                        <i class="fa-solid fa-link"></i>
-                        </a>
-
-                        <a href="https://github.com/akl-leul/ChemLab"
-                        target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                       
-                    
-                     </div>
-                  <div class="col-md-4" >
-                     <iframe src="https://chemlab-red.vercel.app/" width="100%" height="100%" frameborder="1">
-
-                     </iframe>
-                  </div>
-               </div>
+               </div> 
                <div class="row">
                   <div class="col-md-4" >
                      <h2>NASA News Hub</h2>
@@ -525,6 +502,51 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         }
     );
 });
+
+// Smooth Scrolling for Navigation Links
+const navLinks = document.querySelectorAll('a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href.startsWith('http') || href.startsWith('https')) {
+            // Allow default behavior for external links
+            return;
+        }
+        e.preventDefault(); // Prevent default anchor click behavior for internal links
+        const targetId = link.getAttribute('href'); // Get the target section ID
+        const targetSection = document.querySelector(targetId); // Select the target section
+
+        // Scroll to the target section smoothly
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+        document.getElementById('onMobile').style.display = 'none';
+        
+    document.getElementById('icon').style.display = 'flex';
+    });
+});
+
+// Get the button
+let mybutton = document.getElementById("backToTop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+};
+
+// When the user clicks the button, scroll smoothly to the top of the document
+mybutton.onclick = function() {
+    document.documentElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+}
+
 </script>
 <script>
    AOS.init();
