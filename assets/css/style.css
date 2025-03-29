@@ -458,4 +458,11 @@ form #status{
     width: 80%;
     border-left: 5px solid var(--secondary-color);
     border-radius: 12px;
+    border: 2px solid var(--secondary-color);
+}
+form input, form textarea{
+    width: 90%;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    padding: 10px;
 }
