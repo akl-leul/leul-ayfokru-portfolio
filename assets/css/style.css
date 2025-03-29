@@ -39,6 +39,7 @@ nav {
     color: var(--neutral-color);
     border-bottom: 1px solid var(--background-accent);
     box-shadow: 0 0 10px var(--background-accent); 
+    z-index: 9999;
 }
 
 nav .logo a {
