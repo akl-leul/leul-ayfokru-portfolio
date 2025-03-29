@@ -461,9 +461,18 @@ form #status{
     border: 2px solid var(--secondary-color);
 }
 form input, form textarea{
-    width: 90%;
+    width: 100%;
     outline: none;
     border: 1px solid var(--secondary-color);
     padding: 10px;
     border-radius: 6px;
+}
+form button{
+    width: 100%;
+    background: var(--secondary-color);
+    font-weight: 700;
+    border: none;
+}
+form button:active{
+    background: var(--background-accent);
 }
