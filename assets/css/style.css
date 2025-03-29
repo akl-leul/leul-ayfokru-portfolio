@@ -454,7 +454,7 @@ form{
     width: 100%;
 }
 form #status{
-    display: flex;
+    display: none;
     width: 80%;
     border-left: 5px solid var(--secondary-color);
     border-radius: 12px;
@@ -472,6 +472,7 @@ form button{
     background: var(--secondary-color);
     font-weight: 700;
     border: none;
+    padding: 8px;
 }
 form button:active{
     background: var(--background-accent);
