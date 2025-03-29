@@ -405,6 +405,9 @@ a{
     .projects .row .col-md-8 .content .row .col-md-4 iframe{
         height: 400px;
     }
+    form{
+        width: 100%;
+    }
 }
 .contact{
     display: flex;
@@ -455,7 +458,7 @@ form{
 }
 form #status{
     display: none;
-    width: 80%;
+    width: 50%;
     border-left: 5px solid var(--secondary-color);
     border-radius: 12px;
     border: 2px solid var(--secondary-color);
