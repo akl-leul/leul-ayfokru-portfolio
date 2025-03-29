@@ -459,13 +459,15 @@ form h3{
 }
 form #status{
     display: none;
-    width: 80%;
+    width: 70%;
     border-left: 5px solid var(--secondary-color);
     border-radius: 12px;
     font-size: 12px;
     margin-top: 20px;
     border-top: 1px solid var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    margin-left: 60px;
 }
 form input, form textarea{
     width: 100%;
@@ -475,20 +477,23 @@ form input, form textarea{
     border-radius: 6px;
 }
 form button{
-    width: 100%;
+    width: 85%;
     background: var(--secondary-color);
     font-weight: 700;
     border: none;
     padding: 8px;
-}
-form button:active{
-    background: var(--background-accent);
+    border-radius: 6px;
+    margin-left: 60px;
 }
 form i{
-    font-size
+    font-size: 16px;
 }
 @media (max-width: 768px) {
     form{
         width: 100%;
     }
+    form button{
+        margin-left: 0;
+    }
+ 
 }
